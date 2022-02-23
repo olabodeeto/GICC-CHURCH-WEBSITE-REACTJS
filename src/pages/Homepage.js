@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import { HeroButton } from "../components/Button";
 import { Link } from "react-router-dom";
 import bgvideo from "../assets/bg.mp4";
+import Footer from "../components/Footer";
 
 export default function Homepage() {
   return (
@@ -20,7 +21,7 @@ export default function Homepage() {
             <h2 className="text-center text-6xl md:text-8xl md:w-6/12 m-auto font-extrabold text-white">
               GICC
             </h2>
-            <p class="text-white">Global Influence Continental Church</p>
+            <p className="text-white">Global Influence Continental Church</p>
 
             <div className="w-6/12 md:w-4/12 lg:w-3/12 xl:w-2/12 m-auto">
               <HeroButton title="Worship with us" />
@@ -55,7 +56,7 @@ export default function Homepage() {
               </h1>
             </div>
             <div className="xl:w-10/12">
-              <p className="p-10 xl:mt-16 ml-4">
+              <div className="p-10 xl:mt-16 ml-4">
                 <b>Psalm 19:1-4</b>
                 <p>
                   <i>
@@ -93,7 +94,7 @@ export default function Homepage() {
                     </Link>
                   </span>
                 </p>
-              </p>
+              </div>
             </div>
           </div>
         </section>
@@ -199,7 +200,7 @@ export default function Homepage() {
         <section className="m-auto pt-40 bg-white signupbg">
           <div className="bg-gray-100 bg-gradient-to-tr  py-20 px-6 md:px-8 signupbg">
             <div className=" py-40 w-11/12 px-5 m-auto border border-gray-400 flex flex-col justify-center items-center">
-              <h2 className="text-gray-200 text-4xl md:text-5xl mb-5">
+              <h2 className="text-gray-200 text-4xl md:text-5xl mb-5 text-center">
                 Stay Connected
               </h2>
               <p className="px-4 text-center text-gray-200 tracking-wide">
@@ -213,12 +214,12 @@ export default function Homepage() {
           </div>
         </section>
 
-        <section className="bg-white pt-20">
+        <section className="bg-white pt-20 md:pt-10 pb-20 md:py-40">
           <div className="bg-white py-20">
-            <h2 className="text-center text-6xl font-extrabold">
+            <h2 className="text-center text-5xl md:text-6xl font-extrabold">
               UPCOMING <span className="text-gray-500">EVENTS</span>
             </h2>
-            <div className="flex flex-col lg:flex-row gap-4 mt-20 w-10/12 m-auto">
+            <div className="flex flex-col lg:flex-row gap-4 mt-20 w-11/12 md:w-10/12 m-auto md:mt-32">
               <div className="w-full md:w-4/12 border border-blue-50 p-4 flex gap-4">
                 <div className="flex flex-col">
                   <div className="w-14 text-center p-2 bg-gray-800 text-white">
@@ -265,6 +266,7 @@ export default function Homepage() {
           </div>
         </section>
       </main>
+      <Footer />
     </>
   );
 }
