@@ -45,7 +45,7 @@ export default function Homepage() {
         </section>
 
         <section id="about" className=" h-90 bg-white py-40 md:px-10">
-          <div className="flex flex-col md:flex-row md:border-2 border-black md:w-8/12 m-auto">
+          <div className="flex flex-col xl:flex-row lg:flex-col md:border-2 border-black md:w-8/12 m-auto">
             <div className=" px-8 md:p-10 md:py-20 w-10/12 md:w-4/12 mr-4">
               <h1 className="text-gray-800 text-6xl md:text-7xl font-extrabold px-4 w-4/12">
                 Our
@@ -54,8 +54,8 @@ export default function Homepage() {
                 Church
               </h1>
             </div>
-            <div className="md:w-10/12">
-              <p className="p-10 md:mt-16 ml-4">
+            <div className="xl:w-10/12">
+              <p className="p-10 xl:mt-16 ml-4">
                 <b>Psalm 19:1-4</b>
                 <p>
                   <i>
@@ -209,6 +209,58 @@ export default function Homepage() {
               <a className="mt-14 py-3 px-8 bg-gray-800 text-white" href="#">
                 SIGN UP HERE
               </a>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-white pt-20">
+          <div className="bg-white py-20">
+            <h2 className="text-center text-6xl font-extrabold">
+              UPCOMING <span className="text-gray-500">EVENTS</span>
+            </h2>
+            <div className="flex flex-col lg:flex-row gap-4 mt-20 w-10/12 m-auto">
+              <div className="w-full md:w-4/12 border border-blue-50 p-4 flex gap-4">
+                <div className="flex flex-col">
+                  <div className="w-14 text-center p-2 bg-gray-800 text-white">
+                    Feb
+                  </div>
+                  <div className="w-14 text-center p-2 bg-gray-600 text-white">
+                    23
+                  </div>
+                </div>
+                <div className="flex flex-col gap-4">
+                  <p>Zoom Prayer Meeting</p>
+                  <p>Wed 7:00 am – 8:00 am</p>
+                </div>
+              </div>
+              <div className="w-full md:w-4/12 border border-blue-50 p-4 flex gap-4">
+                <div className="flex flex-col">
+                  <div className="w-14 text-center p-2 bg-gray-800 text-white">
+                    Feb
+                  </div>
+                  <div className="w-14 text-center p-2 bg-gray-600 text-white">
+                    23
+                  </div>
+                </div>
+                <div className="flex flex-col gap-4">
+                  <p>Zoom Prayer Meeting</p>
+                  <p>Wed 7:00 am – 8:00 am</p>
+                </div>
+              </div>
+              <div className="w-full md:w-4/12 border border-blue-50 p-4 flex gap-4">
+                <div className="flex flex-col">
+                  <div className="w-14 text-center p-2 bg-gray-800 text-white">
+                    Feb
+                  </div>
+                  <div className="w-14 text-center p-2 bg-gray-600 text-white">
+                    23
+                  </div>
+                </div>
+                <div className="flex flex-col gap-4">
+                  <p>Zoom Prayer Meeting</p>
+                  <p>Wed 7:00 am – 8:00 am</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
