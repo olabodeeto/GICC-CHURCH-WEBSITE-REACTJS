@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import Header from "../components/Header";
 import { useLocation } from "react-router-dom";
 
 export default function About() {
   const location = useLocation();
 
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Header />
@@ -23,7 +26,7 @@ export default function About() {
               </h1>
             </div>
             <div className="md:w-10/12">
-              <p className="p-10 md:mt-16 ml-4">
+              <div className="p-10 md:mt-16 ml-4">
                 <b>Psalm 19:1-4</b>
                 <p>
                   <i>
@@ -52,7 +55,7 @@ export default function About() {
                 </p>
 
                 <p></p>
-              </p>
+              </div>
             </div>
           </div>
           <div className="w-11/12 md:w-8/12 m-auto">

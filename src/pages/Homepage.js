@@ -192,9 +192,9 @@ export default function Homepage() {
             ></iframe>
           </div>
           <div className="-mt-40 md:w-8/12 m-auto flex gap-5 justify-center">
-            <a href="#" className="py-3 px-5 bg-gray-900 text-white">
-              MESSAGES ARCHIVES
-            </a>
+            <Link to="/sermons" className="py-3 px-5 bg-gray-900 text-white">
+              OTHER SERMONS
+            </Link>
           </div>
         </section>
         <section className="m-auto pt-40 bg-white signupbg">

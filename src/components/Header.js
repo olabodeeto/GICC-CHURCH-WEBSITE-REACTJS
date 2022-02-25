@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import SocialIcons from "./SocialIcons";
+import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
 export default function Header() {
@@ -33,38 +34,47 @@ export default function Header() {
           </button>
           <ul
             onClick={() => setnavbarOpen(!navbarOpen)}
-            className={`fixed left-0 right-0 min-h-screen bg-gray-800 text-white font-light pt-10 text-4xl md:text-lg space-y-8 p-4 transition duration-200 transform ${
+            className={`fixed left-0 right-0 min-h-screen bg-gray-800 text-white font-light pt-10 text-4xl md:text-base space-y-8 p-4 transition duration-200 transform ${
               navbarOpen ? "translate-x-0" : "translate-x-full"
             } md:relative md:flex md:min-h-0 md:space-y-0 md:space-x-6 md:p-0 md:translate-x-0`}
           >
             <li>
               {location.pathname !== "/" ? (
                 <>
-                  <a href="/">Home</a>
+                  <a href="/">HOME</a>
                 </>
               ) : (
                 <>
-                  <a href="#">Home</a>
+                  <a href="#">HOME</a>
                 </>
               )}
             </li>
             <li>
-              <a href="#about">About us </a>
+              <a href="#about">ABOUT US </a>
             </li>
             <li>
-              <a href="#locations">Locations</a>
+              {location.pathname !== "/" ? (
+                <>
+                  <Link to="/sermons">MESSAGES</Link>
+                </>
+              ) : (
+                <>
+                  <a href="#message">MESSAGES</a>
+                </>
+              )}
             </li>
             <li>
-              <a href="#message">Messages</a>
+              <Link to="/minitries">MINITRIES</Link>
+            </li>
+
+            <li>
+              <Link to="/nextsteps">NEXT STEPS</Link>
             </li>
             <li>
-              <a href="#">Next Steps</a>
+              <a href="#give">GIVE</a>
             </li>
             <li>
-              <a href="#give">Give</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
+              <a href="#contact">CONTACT</a>
             </li>
           </ul>
         </nav>
