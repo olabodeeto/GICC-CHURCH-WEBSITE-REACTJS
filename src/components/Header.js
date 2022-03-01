@@ -9,8 +9,8 @@ export default function Header() {
   return (
     <>
       <header className="fixed z-50 top-0 w-full flex justify-between items-center px-4 md:px12 h-24 bg-gray-800 md:px-20">
-        <a href="#">
-          <h1 className="text-green-200">My log</h1>
+        <a href="/">
+          <h1 className="text-green-200">My logo</h1>
         </a>
         <nav>
           <button
@@ -41,7 +41,7 @@ export default function Header() {
             <li>
               {location.pathname !== "/" ? (
                 <>
-                  <a href="/">HOME</a>
+                  <Link to="/">HOME</Link>
                 </>
               ) : (
                 <>

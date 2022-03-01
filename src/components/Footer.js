@@ -27,9 +27,9 @@ export default function Footer() {
               <li>
                 <Link to="/sermons">Message</Link>
               </li>
-              <li>
-                <a href="">Next steps</a>
-              </li>
+              {/* <li>
+                <a href="#">Next steps</a>
+              </li> */}
               <li>
                 <Link to="/Give">Give</Link>
               </li>

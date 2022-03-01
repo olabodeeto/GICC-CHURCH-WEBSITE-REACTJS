@@ -3,9 +3,9 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 export default function Give() {
-  const [fullName, setfullName] = useState("");
-  const [phone, setphone] = useState("");
-  const [amount, setamount] = useState("");
+  // const [fullName, setfullName] = useState("");
+  // const [phone, setphone] = useState("");
+  // const [amount, setamount] = useState("");
 
   useLayoutEffect(() => {
     window.scrollTo(0, 0);

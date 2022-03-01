@@ -110,7 +110,7 @@ export default function Homepage() {
                   </p>
                   <div className="mt-10">
                     <a
-                      href="#"
+                      href="/"
                       className="bg-white py-3 px-5 hover:bg-gray-700 hover:ml-5 hover:text-white transform duration-500"
                     >
                       Send prayer request
@@ -127,7 +127,7 @@ export default function Homepage() {
                     daily devotions and will help you to move closer to God.
                   </p>
                   <div className="mt-10">
-                    <a href="#" className="bg-white py-3 px-5">
+                    <a href="/" className="bg-white py-3 px-5">
                       Start Devotional
                     </a>
                   </div>
@@ -148,7 +148,7 @@ export default function Homepage() {
                     <Link to="/give" className="bg-white py-3 px-8">
                       Give
                     </Link>
-                    <a href="#" className="bg-white py-3 px-5">
+                    <a href="/" className="bg-white py-3 px-5">
                       Make a pledge
                     </a>
                   </div>
@@ -167,7 +167,7 @@ export default function Homepage() {
 
                   <div className="mt-10 flex gap-4">
                     <a
-                      href="#"
+                      href="/"
                       className="bg-gray-600 text-white py-3 px-5 rounded-sm"
                     >
                       Share with Us
@@ -187,6 +187,7 @@ export default function Homepage() {
           </div>
           <div className="w-10/12 mb-10 md:w-8/12 m-auto recentmessage bg-white md:p-10">
             <iframe
+              id="thisframe"
               className="w-full h-full"
               src="https://www.youtube.com/embed/tgbNymZ7vqY"
             ></iframe>
@@ -207,7 +208,7 @@ export default function Homepage() {
                 Would you like details on upcoming events and what’s happening
                 here?
               </p>
-              <a className="mt-14 py-3 px-8 bg-gray-800 text-white" href="#">
+              <a className="mt-14 py-3 px-8 bg-gray-800 text-white" href="/">
                 SIGN UP HERE
               </a>
             </div>
