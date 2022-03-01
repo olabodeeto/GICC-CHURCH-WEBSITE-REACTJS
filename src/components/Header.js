@@ -49,9 +49,19 @@ export default function Header() {
                 </>
               )}
             </li>
+
             <li>
-              <a href="#about">ABOUT US </a>
+              {location.pathname !== "/" ? (
+                <>
+                  <Link to="/about">ABOUT US</Link>
+                </>
+              ) : (
+                <>
+                  <a href="#about">ABOUT US</a>
+                </>
+              )}
             </li>
+
             <li>
               {location.pathname !== "/" ? (
                 <>
@@ -64,14 +74,14 @@ export default function Header() {
               )}
             </li>
             <li>
-              <Link to="/minitries">MINITRIES</Link>
+              <Link to="/ministries">MINISTRIES</Link>
             </li>
 
             <li>
               <Link to="/nextsteps">NEXT STEPS</Link>
             </li>
             <li>
-              <a href="#give">GIVE</a>
+              <Link to="/give">GIVE</Link>
             </li>
             <li>
               <a href="#contact">CONTACT</a>

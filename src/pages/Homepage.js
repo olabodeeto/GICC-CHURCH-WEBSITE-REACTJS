@@ -28,7 +28,7 @@ export default function Homepage() {
             </div>
           </div>
         </section>
-        <section className="mt-20 bg-white">
+        <section className="mt-20">
           <div className="h-40 bg-gray-800 flex gap-4 flex-col md:flex-row items-center justify-center">
             <div className="w-full md:w-4/12 px-10 bg-slate-500 h-full flex justify-center flex-col py-4">
               <h3 className="text-gray-100 text-2xl">Saturday</h3>
@@ -145,9 +145,9 @@ export default function Homepage() {
                   </p>
 
                   <div className="mt-10 flex gap-4">
-                    <a href="#" className="bg-white py-3 px-8">
+                    <Link to="/give" className="bg-white py-3 px-8">
                       Give
-                    </a>
+                    </Link>
                     <a href="#" className="bg-white py-3 px-5">
                       Make a pledge
                     </a>

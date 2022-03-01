@@ -1,4 +1,5 @@
 import React, { useLayoutEffect } from "react";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 export default function Messages() {
@@ -11,7 +12,7 @@ export default function Messages() {
       <Header />
       <main>
         <section className="mt-20 p-4 md:p-10">
-          <div className="w-11/12 md:w-10/12 m-auto">
+          <div className="w-11/12 md:w-10/12 m-auto pb-40">
             <h2 className="mt-10 text-6xl text-center font-extrabold">
               Sermons
             </h2>
@@ -32,6 +33,7 @@ export default function Messages() {
           </div>
         </section>
       </main>
+      <Footer />
     </>
   );
 }

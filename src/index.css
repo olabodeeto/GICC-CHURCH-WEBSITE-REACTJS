@@ -20,7 +20,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #495169;
-  background: white;
+  background: #eaf0fc;
 }
 
 code {
@@ -36,7 +36,8 @@ code {
   z-index: -1;
 }
 video {
-  object-fit: fill;
+  /* object-fit: fill; */
+  object-fit: cover;
 }
 
 .hero {
